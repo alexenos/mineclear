@@ -9,7 +9,10 @@ python 2.7.6
 ```
 git clone https://github.com/alexenos/mineclear.git
 ```
-2. Check/Change permissions
+2. Check/Change permissions to be executable
+```
+chmod u+x mineclear_eval.py
+```
 
 ## Usage
 * Run as executable
@@ -17,7 +20,16 @@ git clone https://github.com/alexenos/mineclear.git
 ./mineclear_eval field1.txt script1.txt
 ```
 
-* Run as python script
+## Help
+```
+usage: mineclear_eval.py [-h] field script
 
-* Run within python interactive shell
+Evalues and scores students' mine clearing scripts
 
+positional arguments:
+  field       Field input file
+  script      Script input file
+
+optional arguments:
+  -h, --help  show this help message and exit
+```

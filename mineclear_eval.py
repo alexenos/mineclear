@@ -263,7 +263,7 @@ def main():
 
 def parse_user_args() :
    """ Parses the user arguments and options for the script """
-   parser = ap.ArgumentParser(description="Evalues and scores students mine clearing scripts",
+   parser = ap.ArgumentParser(description="Evalues and scores students' mine clearing scripts",
          formatter_class=ap.ArgumentDefaultsHelpFormatter)
    parser.add_argument('field', type=str, help="Field input file",
          default="field1.txt")
