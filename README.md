@@ -3,6 +3,7 @@ Solution to the CognitiveScale Startfleet Mine Clear Exercise
 
 ## Requirements
 python 2.7.6
+python argparse module
 
 ## Installation
 1. Clone the repository
