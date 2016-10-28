@@ -118,6 +118,7 @@ class Game:
         # Set ship location offset and update mine locations
         if self.field:
             self.ship = (sum(m[0] for m in self.field)/len(self.field), sum(m[1] for m in self.field)/len(self.field))
+            print self.ship
             for m in self.field:
                 m[0] = m[0] - self.ship[0]
                 m[1] = m[1] - self.ship[1]
