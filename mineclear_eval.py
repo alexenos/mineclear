@@ -115,6 +115,7 @@ class Game:
         return True
 
     def init(self):
+        """ Initializes ship and field mine locations after validated setup """
         # Set ship location offset and update mine locations
         if self.field:
             self.ship = (sum(m[0] for m in self.field)/len(self.field), sum(m[1] for m in self.field)/len(self.field))
@@ -193,6 +194,7 @@ class Game:
         for a in act:
             self.execute(a)
         self.drop()
+
     def get_action(self):
         """ Gets the next action and prints """
         act = self.actions[0]
@@ -204,6 +206,7 @@ class Game:
             display = "no action"
         print display + '\n'
         return act
+
     def execute(self, act):
         """ Updates the field based on the action """
         mxy = [[m[0], m[1]] for m in self.field]
@@ -237,6 +240,7 @@ class Game:
                     self.move_penalty = self.move_init
         else: # do nothing
             pass
+
     def drop(self):
         for m in self.field:
             m[2] -= 1
@@ -254,7 +258,6 @@ def main():
     if not game.valid():
         print "Error: Game setup is not valid"
         sys.exit(-1)
-    # else: continue
     # Play game to completion
     result, score = game.play()
     # Print result
