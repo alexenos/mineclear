@@ -17,7 +17,7 @@ chmod u+x mineclear_eval.py
 ## Usage
 * Run as executable
 ```
-./mineclear_eval field1.txt script1.txt
+./mineclear_eval.py field1.txt script1.txt
 ```
 
 ## Help
